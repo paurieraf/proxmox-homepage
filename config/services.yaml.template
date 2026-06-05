@@ -45,7 +45,7 @@
         - Cloudflare Tunnel:
             icon: sh-cloudflare
             href: https://dash.cloudflare.com/
-            description: Ramper web túnel
+            description: Tunel
             widget:
               type: cloudflared
               accountid: ${CLOUDFLARE_ACCOUNT_ID}
