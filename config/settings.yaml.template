@@ -15,30 +15,30 @@ color: slate
 
 useEqualHeights: true
 layout:
-  Infraestructura y red:
-    Infraestructura:
+  Infrastructura i xarxa:
+    Infrastructura:
       header: false
       style: row
       columns: 3
-    Red:
+    Xarxa:
       header: false
       style: row
       columns: 3
-  Almacenamiento y Archivos:
+  Emmagatzematge i fitxers:
     style: row
     columns: 2
-  Aplicaciones y Servicios:
+  Aplicacions i serveis:
     app1:
       header: false
       style: row
       columns: 2
-    app2:
-      header: false
-      style: row
-      columns: 3
-    app3:
-      header: false
-      style: row
-      columns: 2
+    # app2:
+    #   header: false
+    #   style: row
+    #   columns: 3
+    # app3:
+    #   header: false
+    #   style: row
+    #   columns: 2
 
 language: es

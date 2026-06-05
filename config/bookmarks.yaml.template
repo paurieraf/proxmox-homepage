@@ -8,29 +8,22 @@
           href: https://community-scripts.org/
     - Este proyecto en Github:
         - icon: sh-homepage
-          href: https://github.com/alpargatagazer/proxmox-homepage
+          href: https://github.com/paurieraf/proxmox-homepage
     - Documentación de Homepage:
         - icon: sh-homepage
           href: https://gethomepage.dev/
 
-- Web Ramper:
+- pauriera.com:
     - Web pública:
-        - icon: https://raw.githubusercontent.com/alpargatagazer/ramper-web/main/public/favicon.webp
-          href: https://ramper.band
-    - Repo:
-        - icon: sh-github
-          href: https://github.com/alpargatagazer/ramper-web
-    - Repo deploy:
-        - icon: sh-github
-          href: https://github.com/alpargatagazer/ramper-web-deploy
-
-- Alpargatify:
+          href: https://pauriera.com
+  
+- MusicBucket:
     - Web pública:
         - icon: sh-navidrome
-          href: https://${DOMAIN_ALPARGATIFY}
+          href: https://${DOMAIN_MUSICBUCKET}
     - Viejo Repo:
         - icon: sh-github
-          href: https://github.com/alpargatagazer/alpargatify
+          href: https://github.com/paurieraf/alpargatify
     - Bot repo:
         - icon: sh-github
-          href: https://github.com/alpargatagazer/alpargotobot
+          href: https://github.com/alpargatify/alpargotobot

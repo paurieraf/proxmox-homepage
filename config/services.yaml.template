@@ -2,8 +2,8 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/configs/services/
 
-- Infraestructura y red:
-    - Infraestructura:
+- Infrastructura i xarxa:
+    - Infrastructura:
         - Proxmox:
             icon: sh-proxmox
             href: https://${DOMAIN_PVE}
@@ -28,19 +28,19 @@
               type: netdata
               url: https://${DOMAIN_NETDATA}
 
-    - Red:
-        - AdGuard:
-            icon: si-adguard
-            href: https://${DOMAIN_ADGUARD}
-            description: DNS and ad-blocker
-            proxmoxNode: ${PROXMOX_NODE_NAME}
-            proxmoxVMID: 101
-            proxmoxType: lxc
-            widget:
-              type: adguard
-              url: https://${DOMAIN_ADGUARD}
-              username: alpargatagazer
-              password: ${ADGUARD_PASSWORD}
+    - Xarxa:
+        # - AdGuard:
+        #     icon: si-adguard
+        #     href: https://${DOMAIN_ADGUARD}
+        #     description: DNS and ad-blocker
+        #     proxmoxNode: ${PROXMOX_NODE_NAME}
+        #     proxmoxVMID: 101
+        #     proxmoxType: lxc
+        #     widget:
+        #       type: adguard
+        #       url: https://${DOMAIN_ADGUARD}
+        #       username: alpargatagazer
+        #       password: ${ADGUARD_PASSWORD}
 
         - Cloudflare Tunnel:
             icon: sh-cloudflare
@@ -52,89 +52,89 @@
               tunnelid: ${CLOUDFLARE_TUNNEL_ID}
               key: ${CLOUDFLARE_TUNNEL_KEY}
 
-        - Tailscale:
-            icon: sh-tailscale
-            href: https://login.tailscale.com/
-            description: AdGuard en Tailscale
-            widget:
-              type: tailscale
-              deviceid: ${TAILSCALE_DEVICE_ID}
-              key: ${TAILSCALE_KEY}
-              fields: ["address", "update_available", "last_seen"]
+        # - Tailscale:
+        #     icon: sh-tailscale
+        #     href: https://login.tailscale.com/
+        #     description: AdGuard en Tailscale
+        #     widget:
+        #       type: tailscale
+        #       deviceid: ${TAILSCALE_DEVICE_ID}
+        #       key: ${TAILSCALE_KEY}
+        #       fields: ["address", "update_available", "last_seen"]
 
-- Almacenamiento y Archivos:
-    - Filebrowser Quantum:
-        icon: sh-filebrowser-quantum
-        href: https://${DOMAIN_FILEBROWSER}
-        description: Navegador de archivos y compartidor de carpetas
-        proxmoxNode: ${PROXMOX_NODE_NAME}
-        proxmoxVMID: 109
-        proxmoxType: lxc
+# - Almacenamiento y Archivos:
+#     - Filebrowser Quantum:
+#         icon: sh-filebrowser-quantum
+#         href: https://${DOMAIN_FILEBROWSER}
+#         description: Navegador de archivos y compartidor de carpetas
+#         proxmoxNode: ${PROXMOX_NODE_NAME}
+#         proxmoxVMID: 109
+#         proxmoxType: lxc
 
-    - Syncthing:
-        icon: sh-syncthing
-        href: https://${DOMAIN_SYNCTHING}
-        description: Sincroniza carpetas en distintos dispositivos
-        proxmoxNode: ${PROXMOX_NODE_NAME}
-        proxmoxVMID: 110
-        proxmoxType: lxc
+#     - Syncthing:
+#         icon: sh-syncthing
+#         href: https://${DOMAIN_SYNCTHING}
+#         description: Sincroniza carpetas en distintos dispositivos
+#         proxmoxNode: ${PROXMOX_NODE_NAME}
+#         proxmoxVMID: 110
+#         proxmoxType: lxc
 
-- Aplicaciones y Servicios:
+- Aplicacions i Serveis:
+    # - app1:
+    #     - BentoPDF:
+    #         icon: sh-bentopdf
+    #         href: https://${DOMAIN_BENTO}
+    #         description: Herramientas para PDF
+    #         proxmoxNode: ${PROXMOX_NODE_NAME}
+    #         proxmoxVMID: 105
+    #         proxmoxType: lxc
+
+    #     - Vaultwarden:
+    #         icon: sh-vaultwarden
+    #         href: https://${DOMAIN_VAULT}
+    #         description: Gestor de contraseñas
+    #         proxmoxNode: ${PROXMOX_NODE_NAME}
+    #         proxmoxVMID: 113
+    #         proxmoxType: lxc
+
+    # - app2:
+    #     - FreshRSS:
+    #         icon: sh-freshrss
+    #         href: https://${DOMAIN_FRESHRSS}
+    #         description: Lector y agregador RSS
+    #         proxmoxNode: ${PROXMOX_NODE_NAME}
+    #         proxmoxVMID: 103
+    #         proxmoxType: lxc
+    #         widget:
+    #           type: freshrss
+    #           url: https://${DOMAIN_FRESHRSS}
+    #           username: alpargatagazer
+    #           password: ${FRESHRSS_PASSWORD}
+
+    #     - Romm:
+    #         icon: sh-romm
+    #         href: https://${DOMAIN_ROMM}
+    #         description: Biblioteca y archivador de juegos
+    #         proxmoxNode: ${PROXMOX_NODE_NAME}
+    #         proxmoxVMID: 106
+    #         proxmoxType: lxc
+    #         widget:
+    #           type: romm
+    #           url: https://${DOMAIN_ROMM}
+
+    #     - Tandoor Recipes:
+    #         icon: sh-tandoor-recipes
+    #         href: https://${DOMAIN_TANDOOR}
+    #         description: Recetas y más
+    #         proxmoxNode: ${PROXMOX_NODE_NAME}
+    #         proxmoxVMID: 114
+    #         proxmoxType: lxc
+    #         widget:
+    #           type: tandoor
+    #           url: https://${DOMAIN_TANDOOR}
+    #           key: ${TANDOOR_KEY}
+
     - app1:
-        - BentoPDF:
-            icon: sh-bentopdf
-            href: https://${DOMAIN_BENTO}
-            description: Herramientas para PDF
-            proxmoxNode: ${PROXMOX_NODE_NAME}
-            proxmoxVMID: 105
-            proxmoxType: lxc
-
-        - Vaultwarden:
-            icon: sh-vaultwarden
-            href: https://${DOMAIN_VAULT}
-            description: Gestor de contraseñas
-            proxmoxNode: ${PROXMOX_NODE_NAME}
-            proxmoxVMID: 113
-            proxmoxType: lxc
-
-    - app2:
-        - FreshRSS:
-            icon: sh-freshrss
-            href: https://${DOMAIN_FRESHRSS}
-            description: Lector y agregador RSS
-            proxmoxNode: ${PROXMOX_NODE_NAME}
-            proxmoxVMID: 103
-            proxmoxType: lxc
-            widget:
-              type: freshrss
-              url: https://${DOMAIN_FRESHRSS}
-              username: alpargatagazer
-              password: ${FRESHRSS_PASSWORD}
-
-        - Romm:
-            icon: sh-romm
-            href: https://${DOMAIN_ROMM}
-            description: Biblioteca y archivador de juegos
-            proxmoxNode: ${PROXMOX_NODE_NAME}
-            proxmoxVMID: 106
-            proxmoxType: lxc
-            widget:
-              type: romm
-              url: https://${DOMAIN_ROMM}
-
-        - Tandoor Recipes:
-            icon: sh-tandoor-recipes
-            href: https://${DOMAIN_TANDOOR}
-            description: Recetas y más
-            proxmoxNode: ${PROXMOX_NODE_NAME}
-            proxmoxVMID: 114
-            proxmoxType: lxc
-            widget:
-              type: tandoor
-              url: https://${DOMAIN_TANDOOR}
-              key: ${TANDOOR_KEY}
-
-    - app3:
         - Navidrome:
             icon: sh-navidrome
             href: https://${DOMAIN_NAVIDROME}
@@ -149,17 +149,17 @@
               token: ${NAVIDROME_TOKEN}
               salt: randomsalt
 
-        - Ramper web:
+        - pauriera.com web:
             icon: sh-caddy
-            href: https://${DOMAIN_RAMPER}
-            description: Ramper web hosting
+            href: https://${DOMAIN_PAURIERA}
+            description: Pauriera web hosting
             proxmoxNode: ${PROXMOX_NODE_NAME}
             proxmoxVMID: 107
             proxmoxType: lxc
             widgets:
               - type: uptimekuma
-                url: https://${DOMAIN_RAMPER_STATUS}/
-                slug: ramper-local
+                url: https://${DOMAIN_PAURIERA_STATUS}/
+                slug: pauriera-local
               - type: uptimekuma
-                url: https://${DOMAIN_RAMPER_STATUS}/
-                slug: ramper-online
+                url: https://${DOMAIN_PAURIERA_STATUS}/
+                slug: pauriera-online
