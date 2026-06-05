@@ -19,7 +19,7 @@ layout:
     Infraestructura:
       header: false
       style: row
-      columns: 2
+      columns: 3
     Red:
       header: false
       style: row
