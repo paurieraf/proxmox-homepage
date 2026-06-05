@@ -24,9 +24,9 @@ layout:
       header: false
       style: row
       columns: 3
-  Emmagatzematge i fitxers:
-    style: row
-    columns: 2
+  # Emmagatzematge i fitxers:
+  #   style: row
+  #   columns: 3
   # Aplicacions i serveis:
   #   app1:
   #     header: false

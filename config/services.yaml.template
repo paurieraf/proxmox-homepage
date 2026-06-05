@@ -2,65 +2,64 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/configs/services/
 
-- Infrastructura i xarxa:
-    - Infrastructura:
-        - Proxmox:
-            icon: sh-proxmox
-            href: https://${DOMAIN_PVE}
-            description: Proxmox Virtualization Platform
-            widget:
-              type: proxmox
-              url: https://${DOMAIN_PVE}
-              username: ${PROXMOX_NODE_USERNAME}
-              password: ${PROXMOX_NODE_PASSWORD}
-              node: ${PROXMOX_NODE_NAME}
+- Infrastructura:
+    - Proxmox:
+        icon: sh-proxmox
+        href: https://${DOMAIN_PVE}
+        description: Proxmox Virtualization Platform
+        widget:
+          type: proxmox
+          url: https://${DOMAIN_PVE}
+          username: ${PROXMOX_NODE_USERNAME}
+          password: ${PROXMOX_NODE_PASSWORD}
+          node: ${PROXMOX_NODE_NAME}
 
-        - ProxMenux:
-            icon: sh-proxmenux
-            href: https://${DOMAIN_PROXMENUX}
-            description: Otro PVE monitor
+    - ProxMenux:
+        icon: sh-proxmenux
+        href: https://${DOMAIN_PROXMENUX}
+        description: Otro PVE monitor
 
-        - Netdata:
-            icon: si-netdata
-            href: https://${DOMAIN_NETDATA}
-            description: PVE monitor
-            widget:
-              type: netdata
-              url: https://${DOMAIN_NETDATA}
+    - Netdata:
+        icon: si-netdata
+        href: https://${DOMAIN_NETDATA}
+        description: PVE monitor
+        widget:
+          type: netdata
+          url: ${URL_NETDATA_LOCAL}
 
-    - Xarxa:
-        # - AdGuard:
-        #     icon: si-adguard
-        #     href: https://${DOMAIN_ADGUARD}
-        #     description: DNS and ad-blocker
-        #     proxmoxNode: ${PROXMOX_NODE_NAME}
-        #     proxmoxVMID: 101
-        #     proxmoxType: lxc
-        #     widget:
-        #       type: adguard
-        #       url: https://${DOMAIN_ADGUARD}
-        #       username: alpargatagazer
-        #       password: ${ADGUARD_PASSWORD}
+- Xarxa:
+    - Adguard:
+        icon: si-adguard
+        href: https://${DOMAIN_ADGUARD}
+        description: DNS i ad-blocker
+        proxmoxNode: ${PROXMOX_NODE_NAME}
+        proxmoxVMID: 104
+        proxmoxType: lxc
+        widget:
+          type: adguard
+          url: https://${DOMAIN_ADGUARD}
+          username: ${ADGUARD_USERNAME}
+          password: ${ADGUARD_PASSWORD}
 
-        - Cloudflare Tunnel:
-            icon: sh-cloudflare
-            href: https://dash.cloudflare.com/
-            description: Tunel
-            widget:
-              type: cloudflared
-              accountid: ${CLOUDFLARE_ACCOUNT_ID}
-              tunnelid: ${CLOUDFLARE_TUNNEL_ID}
-              key: ${CLOUDFLARE_TUNNEL_KEY}
+    - Cloudflare Tunnel:
+        icon: sh-cloudflare
+        href: https://dash.cloudflare.com/
+        description: Tunel
+        widget:
+          type: cloudflared
+          accountid: ${CLOUDFLARE_ACCOUNT_ID}
+          tunnelid: ${CLOUDFLARE_TUNNEL_ID}
+          key: ${CLOUDFLARE_TUNNEL_KEY}
 
-        # - Tailscale:
-        #     icon: sh-tailscale
-        #     href: https://login.tailscale.com/
-        #     description: AdGuard en Tailscale
-        #     widget:
-        #       type: tailscale
-        #       deviceid: ${TAILSCALE_DEVICE_ID}
-        #       key: ${TAILSCALE_KEY}
-        #       fields: ["address", "update_available", "last_seen"]
+    - Tailscale:
+        icon: sh-tailscale
+        href: https://login.tailscale.com/
+        description: AdGuard a Tailscale
+        widget:
+          type: tailscale
+          deviceid: ${TAILSCALE_DEVICE_ID}
+          key: ${TAILSCALE_KEY}
+          fields: ["address", "update_available", "last_seen"]
 
 # - Almacenamiento y Archivos:
 #     - Filebrowser Quantum:
