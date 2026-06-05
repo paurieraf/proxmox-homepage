@@ -15,6 +15,11 @@
               password: ${PROXMOX_NODE_PASSWORD}
               node: ${PROXMOX_NODE_NAME}
 
+        - ProxMenux:
+            icon: sh-proxmenux
+            href: https://${DOMAIN_PROXMENUX}
+            description: Otro PVE monitor
+
         - Netdata:
             icon: si-netdata
             href: https://${DOMAIN_NETDATA}
