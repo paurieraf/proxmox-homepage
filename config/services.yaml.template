@@ -79,7 +79,7 @@
 #         proxmoxVMID: 110
 #         proxmoxType: lxc
 
-- Aplicacions i Serveis:
+# - Aplicacions i Serveis:
     # - app1:
     #     - BentoPDF:
     #         icon: sh-bentopdf
@@ -134,32 +134,32 @@
     #           url: https://${DOMAIN_TANDOOR}
     #           key: ${TANDOOR_KEY}
 
-    - app1:
-        - Navidrome:
-            icon: sh-navidrome
-            href: https://${DOMAIN_NAVIDROME}
-            description: Plataforma de streaming musical
-            proxmoxNode: ${PROXMOX_NODE_NAME}
-            proxmoxVMID: 112
-            proxmoxType: lxc
-            widget:
-              type: navidrome
-              url: https://${DOMAIN_NAVIDROME}
-              user: ${NAVIDROME_USER}
-              token: ${NAVIDROME_TOKEN}
-              salt: randomsalt
+    # - app1:
+    #     - Navidrome:
+    #         icon: sh-navidrome
+    #         href: https://${DOMAIN_NAVIDROME}
+    #         description: Plataforma de streaming musical
+    #         proxmoxNode: ${PROXMOX_NODE_NAME}
+    #         proxmoxVMID: 112
+    #         proxmoxType: lxc
+    #         widget:
+    #           type: navidrome
+    #           url: https://${DOMAIN_NAVIDROME}
+    #           user: ${NAVIDROME_USER}
+    #           token: ${NAVIDROME_TOKEN}
+    #           salt: randomsalt
 
-        - pauriera.com web:
-            icon: sh-caddy
-            href: https://${DOMAIN_PAURIERA}
-            description: Pauriera web hosting
-            proxmoxNode: ${PROXMOX_NODE_NAME}
-            proxmoxVMID: 107
-            proxmoxType: lxc
-            widgets:
-              - type: uptimekuma
-                url: https://${DOMAIN_PAURIERA_STATUS}/
-                slug: pauriera-local
-              - type: uptimekuma
-                url: https://${DOMAIN_PAURIERA_STATUS}/
-                slug: pauriera-online
+    #     - pauriera.com web:
+    #         icon: sh-caddy
+    #         href: https://${DOMAIN_PAURIERA}
+    #         description: Pauriera web hosting
+    #         proxmoxNode: ${PROXMOX_NODE_NAME}
+    #         proxmoxVMID: 107
+    #         proxmoxType: lxc
+    #         widgets:
+    #           - type: uptimekuma
+    #             url: https://${DOMAIN_PAURIERA_STATUS}/
+    #             slug: pauriera-local
+    #           - type: uptimekuma
+    #             url: https://${DOMAIN_PAURIERA_STATUS}/
+    #             slug: pauriera-online

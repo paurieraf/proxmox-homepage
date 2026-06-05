@@ -6,10 +6,10 @@
     - Proxmox Community Scripts:
         - icon: sh-proxmox
           href: https://community-scripts.org/
-    - Este proyecto en Github:
+    - Aquest projecte a Github:
         - icon: sh-homepage
           href: https://github.com/paurieraf/proxmox-homepage
-    - Documentación de Homepage:
+    - Documentació de Homepage:
         - icon: sh-homepage
           href: https://gethomepage.dev/
 
@@ -21,7 +21,7 @@
     - Web pública:
         - icon: sh-navidrome
           href: https://${DOMAIN_MUSICBUCKET}
-    - Viejo Repo:
+    - Repo:
         - icon: sh-github
           href: https://github.com/paurieraf/alpargatify
     - Bot repo:
